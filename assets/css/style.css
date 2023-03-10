@@ -1,0 +1,864 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.titleHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  gap: 200px;
+}
+
+ul.nameLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.namelistLink {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.nameLink > li {
+  padding: 30px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "montserrat";
+  line-height: 1;
+}
+
+ul.nameLink > li:hover {
+  color: #afafaf;
+  cursor: pointer;
+}
+
+ul.nameLink > li:hover .namelistLink {
+  display: block;
+  margin-top: 10px;
+  background-color: #edf1fa;
+  padding-left: -20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  color: black;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: "montserrat";
+  position: absolute;
+  min-width: 150px;
+}
+
+.iconLink {
+  display: none;
+}
+
+.titleContact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.titleContact > p {
+  padding-right: 5px;
+  color: #afafaf;
+}
+
+.contact {
+  padding-right: 5px;
+}
+
+.headerImg {
+  border: none;
+  border-bottom: 1px solid #afafaf;
+  padding: 5px 30px 5px 10px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.search {
+  border: none;
+  outline: none;
+}
+/* mobile */
+.navRight {
+  padding: 20px;
+  display: none;
+}
+
+.iconMoblie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+}
+.nameLinkRight {
+  position: relative;
+  font-weight: 700;
+  font-family: "montserrat";
+  border-bottom: 2px solid #edf1fa;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.titleContactMoblie {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.icontitleContactMoblie {
+  padding-right: 10px;
+}
+.titleContactMoblie > p {
+  /* padding-right: 5px; */
+  color: #afafaf;
+}
+.nameLinkRight {
+  list-style: none;
+}
+.navOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 40px;
+  margin-top: 60px;
+}
+
+.titleText {
+  font-family: "montserrat";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  font-style: normal;
+}
+
+.textname {
+  text-align: center;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "lato";
+  font-weight: 300;
+}
+.nameFormRegister {
+  max-width: 60%;
+  text-align: center;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "lato";
+  font-weight: 300;
+}
+.imgProduct {
+  max-width: 100%;
+}
+.productData {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.productTitle {
+  font-family: "montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.productDescribe {
+  max-width: 336px;
+  max-height: 90px;
+  font-weight: 300;
+  font-family: "lato";
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  font-size: 16px;
+  color: #1c1d21;
+  line-height: 30px;
+}
+
+.buttonProduct {
+  transition-duration: 0.4s;
+  padding: 0 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.buttonProduct:hover {
+  background-color: #1c1d21;
+  color: white;
+}
+.titleInformation {
+  font-family: "latoregular";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.textdisInformation {
+  font-family: "montserrat";
+  text-transform: uppercase;
+  color: #afafaf;
+  letter-spacing: 1px;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.textInformation {
+  color: #777777;
+  width: 385px;
+  height: 150px;
+  font-family: "lato";
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.informationList {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  padding-right: 80px;
+}
+.informationListData {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+}
+.information {
+  background-image: url(https://cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/19/2016/03/bg-team.jpg?fbclid=IwAR21i3NkSOfqhYvsxuyenkw4x4h454QVO0RkC9abJ8vObnQrccY8oOeO-Y4);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.imgPeople {
+  width: 500px;
+  height: 650px;
+  position: absolute;
+  left: -13%;
+  bottom: 0;
+}
+
+.buttonMove {
+  opacity: 0.6;
+  background-color: rgba(255, 255, 255, 1);
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 28px;
+  line-height: 100px;
+}
+.buttonMove:hover {
+  opacity: 1;
+}
+
+.advertisement {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.img {
+  background-image: url(https://cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/19/2016/04/Nursing-Error-Rad-Law-Firm-California-Texas-930x621.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  background-size: cover;
+  height: 800px;
+  max-height: 500px;
+}
+.contentdAvertisement {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 970px;
+  min-height: 145px;
+  margin: -145px auto 0px;
+  background: #ffffff;
+  padding: 40px 25px 40px;
+  box-shadow: 7px 14px 42px 3px rgb(163 174 184 / 40%);
+}
+.lineSeparator {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  bottom: 50px;
+  width: 1px;
+  background: #abb5c5;
+  opacity: 0.5;
+}
+.left {
+  width: 40%;
+  float: left;
+}
+.leftRightTitle {
+  font-family: "montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.leftText {
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "lato";
+  color: #777777;
+}
+.leftLink {
+  padding-bottom: 20px;
+  font-size: 19px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+.right {
+  width: 40%;
+  float: right;
+  line-height: 30px;
+}
+.rightText {
+  color: #777777;
+  font-family: "lato";
+  font-size: 16px;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+.rightTextLink {
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 30px;
+}
+.business {
+  background-image: url(https://cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/19/2016/03/bg-counter.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(10, fr);
+}
+.businessList {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.businessData {
+  width: 240px;
+  height: auto;
+}
+.numberBusiness {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "montserrat";
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 30px;
+}
+.titleBusiness {
+  font-family: "montserrat";
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.125;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.textBusiness {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.register {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: #edf1fa;
+  width: 100%;
+}
+.formRegister {
+  flex-direction: column;
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+.imgRegister {
+  width: 40%;
+}
+.imgform {
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  padding-top: 20px;
+}
+
+.inputForm {
+  height: 45px;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  color: #c4c0be;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+.textArea {
+  height: 130px;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  color: #c4c0be;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+.butonForm {
+  height: 45px;
+  transition-duration: 0.4s;
+  padding: 0 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+}
+.butonForm:hover {
+  background-color: #000;
+  color: white;
+  border: none;
+}
+.news {
+  background-image: url(//cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/19/2016/03/bg-testi.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  padding: 100px 0;
+}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.newsText {
+  color: #ffffff;
+  font-family: "lato";
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  font-weight: 300;
+}
+.newsTitle {
+  font-family: "montserratbold";
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: #ffffff;
+}
+.newsa {
+  font-family: "latoregular";
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+  .nameLink {
+    display: none !important;
+  }
+  .titleContact {
+    visibility: hidden;
+  }
+  .headerImg {
+    visibility: hidden;
+  }
+  .iconLink {
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+  }
+
+  .iconLink:active .navRight {
+    display: flex;
+  }
+  .nav__input:checked ~ .navRight {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    background-color: #fff;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    width: 80%;
+    top: 0;
+    right: 0;
+    transform: translateX(0);
+  }
+  .nav__input:checked ~ .navOverlay {
+    display: block;
+  }
+  .titleHeader {
+    display: block;
+  }
+  .productData {
+    display: grid;
+    grid-template-columns: repeat(1, 12fr);
+  }
+
+  .business {
+    width: 100%;
+  }
+  .businessList {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .businessList {
+    gap: 0;
+  }
+  .register {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .formRegister {
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 0;
+  }
+
+  .imgRegister {
+    width: 100%;
+  }
+  .nameFormRegister {
+    width: 90%;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .form {
+    width: 90%;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+  }
+  .informationList {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .informationListTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 0;
+  }
+  .informationList {
+    width: 100%;
+  }
+  .textInformation {
+    display: none;
+  }
+  /* loi */
+  .informationListData {
+    width: 100%;
+  }
+  .informationImg {
+    width: 100%;
+  }
+  .imgPeople {
+    width: 75%;
+    position: relative;
+    height: auto;
+    left: 14%;
+  }
+  .buttonBox {
+    position: absolute;
+    cursor: pointer;
+    left: 30%;
+  }
+  .lineSeparator {
+    display: none;
+  }
+  .contentdAvertisement {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 11px 40px;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    float: none;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #abb5c5;
+  }
+  .newsData {
+    width: 95%;
+  }
+  .newsText {
+    color: #ffffff;
+    font-family: "lato";
+    font-size: 21px;
+    line-height: 44px;
+  }
+}
+/* table */
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .titleHeader {
+    flex-direction: column;
+    padding-left: 127px;
+    padding-right: 127px;
+    gap: 45px;
+    align-items: normal;
+  }
+  .productData {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .titleContact {
+    display: flex;
+    justify-content: start;
+  }
+
+  .searchHeader {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .businessData {
+    width: 179px;
+    height: auto;
+  }
+  .register {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .formRegister {
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 0;
+  }
+  .imgRegister {
+    width: 100%;
+  }
+  .textname {
+    font-size: 19px !important;
+    line-height: 40px !important;
+  }
+  .form {
+    width: 70%;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .informationListData {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .informationList {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    padding-right: 240px;
+  }
+  .imgPeople {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: -5%;
+    top: 0;
+  }
+  .businessList {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .titleHeader {
+    gap: 100px;
+  }
+  .productData {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .titleContact {
+    display: flex;
+    justify-content: start;
+  }
+
+  .aaa {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .businessData {
+    width: 179px;
+    height: auto;
+  }
+  .register {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .formRegister {
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 0;
+  }
+  .imgRegister {
+    width: 100%;
+  }
+  .textname {
+    font-size: 19px !important;
+    line-height: 40px !important;
+  }
+  .form {
+    width: 70%;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .informationListData {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imgPeople {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: -13%;
+    top: 0;
+  }
+  .informationList {
+    padding-bottom: 100px !important;
+  }
+  .nameFormRegister {
+    width: 80%;
+    text-align: center;
+    font-size: 36px;
+    line-height: 48px;
+    font-family: "lato";
+    font-weight: 300;
+  }
+}
+@media only screen and (max-width: 468px) {
+  .buttonBox {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    left: 22%;
+  }
+}
+
+@media only screen and (max-width: 289px) {
+  .buttonBox {
+    position: absolute;
+    cursor: pointer;
+    left: 13%;
+  }
+}
